@@ -1,0 +1,343 @@
+@charset "utf-8";
+
+/* 共通のスタイル */
+
+
+
+body.index_fadeIn{
+  animation-name:fadeInAnime;
+  animation-duration:1.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+/*  text-align: center;*/
+}
+@keyframes fadeInAnime{
+  0% {
+    opacity: 0;
+}
+
+  100% {
+    opacity: 1;
+}
+}
+
+
+
+::selection{
+  background-color: #67a8dd;
+  color: #fff;
+}
+
+
+
+header div.logowrap{
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 0 0;
+}
+header div.logowrap p{
+  letter-spacing: 3px;
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+header div.logowrap img{
+  margin: 5px 3px 0 0;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  margin: 0 auto 0 auto;
+  padding: 30px 0 5px 0;
+  font-size: 1.3rem;
+  font-family: 'Noto Serif JP', serif;
+}
+nav div{
+  display: block;
+}
+nav div img{
+  width: 25px;
+  height: 25px;
+}
+nav div a{
+  color: #000;
+  text-decoration: none;
+}
+nav div a:hover{
+  opacity: 0.5;
+  border-bottom: solid 1.5px black;
+}
+
+
+
+
+
+
+main div#innerwrapA{
+  width: 1150px;
+  margin: 0 auto;
+  padding: 0 90px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+main div#innerwrapB{
+  width: 1150px;
+  margin: 0 auto;
+  padding: 0 90px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+main div#innerwrapC{
+  width: 1150px;
+  margin: 0 auto;
+  padding: 0 90px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+main div.container{
+  padding-top: 70px;
+}
+main div.container1{
+  padding-top: 30px;
+}
+main div.itme_inner{
+  display: flex;
+  justify-content: space-between;
+}
+main div.itme_inner figure.itme_image{
+  display: block;
+}
+main div.itme_inner figure.itme_images img{
+  padding: auto 0;
+
+}
+main div.itme_inner div{}
+main div.itme_inner div img.sozaigazou{
+  text-align: center;
+  margin: 8px 0 0 0px;
+}
+main div.itme_inner div p.sozainame{
+  font-family: 'Noto Serif JP', serif;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  padding: 15px 0 0 0;
+}
+main div.itme_inner div p.sozainame_en{
+  font-size: 15px;
+  padding: 3px 0 0 0;
+  letter-spacing: 0.3em;
+
+}
+main div.itme_inner div.textwrap{
+  align-items: center;
+/*  padding: 2em 0 0 0;*/
+}
+main div.textwrap div.setumeiwrap{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+main div.textwrap div.setumeiwrap p.setumeitext{
+  text-align: left;
+  letter-spacing: 0.1rem;
+  line-height: 2;
+}
+
+
+main div.tanawrap{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: 40px auto 100px auto;
+}
+main div.tanawrap:last-child{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: 40px auto 10px auto;
+}
+main div.syouhinwrap{
+  display: block;
+  padding: 20px;
+  margin: 0 auto 4px auto;
+  width: 24%;
+  border: solid 1.5px #ddd;
+}
+main div.syouhinwrap a{}
+main div.syouhinwrap a:hover{
+  opacity: 0.5;
+}
+main div.syouhinwrap figure{
+  text-align: center;
+  margin: 0 0 16px 0;
+}
+main div.syouhinwrap figure img{
+  width: 200px;
+  height: 200px;
+}
+main div.syouhinwrap h1{
+  padding: 0 0 0 10px;
+  line-height: 1.8;
+  font-family: 'Noto Serif JP', serif;
+}
+main div.syouhinwrap p{
+  padding: 0 0 0 10px;
+  line-height: 1.8;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+main div.syouhinwrap a.godetail{
+  margin: 0 0 0 10px;
+  line-height: 1.8;
+  font-size: 0.8rem;
+  color: #67a8dd;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  text-decoration: none;
+}
+main div.syouhinwrap a.godetail:hover{
+  opacity: 0.7;
+  color: #F06060;
+  border-bottom: solid 1px #F06060;
+}
+
+
+
+
+
+
+footer{
+  text-align: center;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+footer address{
+  padding: 20px 0;
+}
+
+
+
+
+
+
+/* -----------------------deteil.html------------------------- */
+
+header a{
+  text-decoration: none;
+  color: black;
+}
+header a:hover{
+  opacity: 0.5;
+}
+header div.detailheader{
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+}
+header div.detailheader div.logowrap2{
+  display: flex;
+  justify-content: center;
+  padding: 15px 0 10px 0;
+}
+header div.detailheader div.logowrap2 p{
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+header div.detailheader div.logowrap2 img{
+  margin: 5px 3px 0 0;
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+
+main div.setumeiwrap2{
+  position: fixed;
+  left: 5%;
+  top: 30%;
+}
+main div.setumeiwrap2 div{
+  width: 355px;
+  font-family: 'Noto Serif JP', serif;
+/*  background-color: #ddd;*/
+}
+main div.setumeiwrap2 div p{
+/*  padding: 0 0 0 20px;*/
+  line-height: 1.8;
+}
+
+
+main div.detailwrap{
+  display: flex;
+  justify-content: center;
+}
+main div.gazouwrap{
+  display: block;
+  margin: 150px 0 0 0;
+  width: 33%;
+  text-align: center;
+}
+main div.gazouwrap figure{}
+main div.gazouwrap figure img{
+  margin: 0 0 100px 0;
+  max-width: 330px;
+  max-height: 330px;
+}
+main div.gazouwrap figure img:last-child{
+  margin: 0 0 145px 0;
+  max-width: 330px;
+  max-height: 330px;
+}
+
+main div.kounyuuwrap{
+  position: fixed;
+  right: 3%;
+  top: 30%;
+}
+main div.kounyuuwrap div{
+  width: 310px;
+/*  background-color: #ddd;*/
+  font-family: 'Noto Serif JP', serif;
+}
+main div.kounyuuwrap div p{
+  line-height: 1.7;
+}
+main div.kounyuuwrap div input{
+  padding: 8px;
+  margin: 8px 0 0 0;
+  border:solid 1px black;
+  width: 156px;
+}
+main div.kounyuuwrap div p.hosii:hover{
+  opacity: 0.5;
+}
+main div.kounyuuwrap div a{
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0 8px 0;
+  background: black;
+  width: 150px;
+  border: 0;
+  padding: 12px;
+  color: #FFFFFF;
+  font-size: 13px;
+  cursor: pointer;
+}
+main div.kounyuuwrap div a:hover{
+  opacity: 0.5;
+}
